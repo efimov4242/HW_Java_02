@@ -23,6 +23,7 @@ public class readJson {
 
         JSONArray studentsArr = (JSONArray) jsonObject.get("students");
         Iterator studentsItr = studentsArr.iterator();
+
         while (studentsItr.hasNext()) {
             JSONObject test = (JSONObject) studentsItr.next();
             StringBuilder sb = new StringBuilder("select * from students where ");
